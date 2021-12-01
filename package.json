@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/Yaugen/advent2021/issues"
   },
-  "homepage": "https://github.com/Yaugen/advent2021#readme"
+  "homepage": "https://github.com/Yaugen/advent2021#readme",
+  "type": "module"
 }

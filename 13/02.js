@@ -71,9 +71,9 @@ const foldX = (area, foldLine) => {
 			}
 		}
 	};
-	const firstPart = area.map((line) => line.slice(0, foldLine));
+	const firstPart = area.map((line) => line.slice(0, foldLine).reverse());
 	mergeWithNewArea(firstPart);
-	const secondPart = area.map((line) => line.slice(foldLine + 1).reverse());
+	const secondPart = area.map((line) => line.slice(foldLine + 1));
 	mergeWithNewArea(secondPart);
 
 	return newArea;

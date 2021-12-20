@@ -48,7 +48,7 @@ const addLines = (n = 3, curDefault) => {
 };
 
 const step = (curDefault) => {
-	addLines(2, curDefault);
+	addLines(1, curDefault);
 	const newArea = Array(height)
 		.fill("")
 		.map(() => Array(width).fill(""));
@@ -70,7 +70,7 @@ const step = (curDefault) => {
 };
 
 let curDefault = "0";
-for (let i = 0; i < 2; i++) {
+for (let i = 0; i < 50; i++) {
 	step(curDefault);
 	curDefault = curDefault === "1" ? map[511] : map[0];
 }

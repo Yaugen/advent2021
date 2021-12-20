@@ -48,7 +48,7 @@ const addLines = (n = 3, curDefault) => {
 };
 
 const step = (curDefault) => {
-	addLines(2, curDefault);
+	addLines(1, curDefault);
 	const newArea = Array(height)
 		.fill("")
 		.map(() => Array(width).fill(""));
